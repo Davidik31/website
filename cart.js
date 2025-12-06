@@ -22,7 +22,7 @@ class Cart {
 
             // Загружаем товары из JSON файла
             console.log('Загружаем товары из JSON...');
-            const response = await fetch('../json/products.json');
+            const response = await fetch('products.json');
             if (!response.ok) {
                 throw new Error('Не удалось загрузить товары');
             }

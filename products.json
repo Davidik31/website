@@ -11,7 +11,7 @@
       "rating": 4.5,
       "isNew": false,
       "discount": 0,
-      "image": "../images/nike_air_max_270.jpg",
+      "image": "nike_air_max_270.jpg",
       "description": "Мужские кроссовки для бега с технологией Air Max",
       "sizes": ["40", "41", "42", "43", "44", "45"]
     },
@@ -26,7 +26,7 @@
       "rating": 4.8,
       "isNew": true,
       "discount": 10,
-      "image": "../images/adidas-adidas-ultra-boost-22.jpg",
+      "image": "adidas-adidas-ultra-boost-22.jpg",
       "description": "Беговые кроссовки с технологией Boost",
       "sizes": ["39", "40", "41", "42", "43", "44"]
     },
@@ -41,7 +41,7 @@
       "rating": 4.7,
       "isNew": false,
       "discount": 0,
-      "image": "../images/Nike_Jordan_1.png",
+      "image": "Nike_Jordan_1.png",
       "description": "Баскетбольные кроссовки Air Jordan 1",
       "sizes": ["40", "41", "42", "43", "44", "45"]
     },
@@ -56,7 +56,7 @@
       "rating": 4.3,
       "isNew": false,
       "discount": 15,
-      "image": "../images/adidas_predator.jpg",
+      "image": "adidas_predator.jpg",
       "description": "Футбольные бутсы для искусственного покрытия",
       "sizes": ["39", "40", "41", "42", "43"]
     },
@@ -71,7 +71,7 @@
       "rating": 4.2,
       "isNew": true,
       "discount": 0,
-      "image": "../images/puma-rs-x.jpg",
+      "image": "puma-rs-x.jpg",
       "description": "Повседневные кроссовки в ретро-стиле",
       "sizes": ["38", "39", "40", "41", "42", "43"]
     },
@@ -86,7 +86,7 @@
       "rating": 4.4,
       "isNew": false,
       "discount": 20,
-      "image": "../images/New_Balance_574.jpg",
+      "image": "New_Balance_574.jpg",
       "description": "Классические кроссовки для повседневной носки",
       "sizes": ["39", "40", "41", "42", "43", "44"]
     },
@@ -101,7 +101,7 @@
       "rating": 4.6,
       "isNew": true,
       "discount": 0,
-      "image": "../images/nike_metcon_8.jpg",
+      "image": "nike_metcon_8.jpg",
       "description": "Кроссовки для функционального тренинга",
       "sizes": ["40", "41", "42", "43", "44"]
     },
@@ -116,7 +116,7 @@
       "rating": 4.5,
       "isNew": false,
       "discount": 10,
-      "image": "../images/reebok_nano_x2.jpg",
+      "image": "reebok_nano_x2.jpg",
       "description": "Кроссовки для кроссфита и силовых тренировок",
       "sizes": ["40", "41", "42", "43", "44", "45"]
     },
@@ -131,7 +131,7 @@
       "rating": 4.7,
       "isNew": true,
       "discount": 0,
-      "image": "../images/asics-gel-kayano-29.jpg",
+      "image": "asics-gel-kayano-29.jpg",
       "description": "Беговые кроссовки с поддержкой стопы",
       "sizes": ["40", "41", "42", "43", "44"]
     },
@@ -146,7 +146,7 @@
       "rating": 4.4,
       "isNew": true,
       "discount": 0,
-      "image": "../images/curry-brand-9.jpg",
+      "image": "curry-brand-9.jpg",
       "description": "Баскетбольные кроссовки Стефена Карри",
       "sizes": ["41", "42", "43", "44", "45"]
     },
@@ -161,7 +161,7 @@
       "rating": 4.8,
       "isNew": false,
       "discount": 0,
-      "image": "../images/nike_air_force_1.webp",
+      "image": "nike_air_force_1.webp",
       "description": "Культовые баскетбольные кроссовки в повседневном стиле",
       "sizes": ["39", "40", "41", "42", "43", "44", "45"]
     },
@@ -176,7 +176,7 @@
       "rating": 4.6,
       "isNew": false,
       "discount": 25,
-      "image": "../images/adidas_superstar.jpg",
+      "image": "adidas_superstar.jpg",
       "description": "Легендарные кроссовки с ракушкой на носке",
       "sizes": ["38", "39", "40", "41", "42", "43", "44"]
     },
@@ -191,7 +191,7 @@
       "rating": 4.5,
       "isNew": false,
       "discount": 0,
-      "image": "../images/nike_pegasus_39.png",
+      "image": "nike_pegasus_39.png",
       "description": "Универсальные беговые кроссовки для ежедневных тренировок",
       "sizes": ["40", "41", "42", "43", "44", "45"]
     },
@@ -206,7 +206,7 @@
       "rating": 4.3,
       "isNew": true,
       "discount": 0,
-      "image": "../images/adidas_gazelle.jpg",
+      "image": "adidas_gazelle.jpg",
       "description": "Классические кроссовки в ретро-стиле",
       "sizes": ["39", "40", "41", "42", "43", "44"]
     },
@@ -221,7 +221,7 @@
       "rating": 4.1,
       "isNew": false,
       "discount": 30,
-      "image": "../images/puma_future_rider.jpg",
+      "image": "puma_future_rider.jpg",
       "description": "Стильные кроссовки вдохновленные 80-ми годами",
       "sizes": ["38", "39", "40", "41", "42", "43"]
     },
@@ -236,7 +236,7 @@
       "rating": 4.9,
       "isNew": true,
       "discount": 0,
-      "image": "../images/new_balance_990v6.jpg",
+      "image": "new_balance_990v6.jpg",
       "description": "Премиальные беговые кроссовки Made in USA",
       "sizes": ["40", "41", "42", "43", "44", "45"]
     },
@@ -251,7 +251,7 @@
       "rating": 4.6,
       "isNew": false,
       "discount": 0,
-      "image": "../images/nike_lebron_19.jpg",
+      "image": "nike_lebron_19.jpg",
       "description": "Баскетбольные кроссовки Леброна Джеймса",
       "sizes": ["42", "43", "44", "45", "46", "47"]
     },
@@ -266,7 +266,7 @@
       "rating": 4.4,
       "isNew": true,
       "discount": 0,
-      "image": "../images/adidas_copa_sense.jpg",
+      "image": "adidas_copa_sense.jpg",
       "description": "Футбольные бутсы премиум-класса",
       "sizes": ["40", "41", "42", "43", "44"]
     },
@@ -281,7 +281,7 @@
       "rating": 4.7,
       "isNew": false,
       "discount": 15,
-      "image": "../images/asics_gel_nimbus_24.png",
+      "image": "asics_gel_nimbus_24.png",
       "description": "Беговые кроссовки с максимальной амортизацией",
       "sizes": ["40", "41", "42", "43", "44", "45"]
     },
@@ -296,7 +296,7 @@
       "rating": 4.2,
       "isNew": false,
       "discount": 40,
-      "image": "../images/reebok_classic_leather.jpeg",
+      "image": "reebok_classic_leather.jpeg",
       "description": "Классические кожаные кроссовки",
       "sizes": ["39", "40", "41", "42", "43", "44"]
     },
@@ -311,7 +311,7 @@
       "rating": 4.8,
       "isNew": true,
       "discount": 0,
-      "image": "../images/nike_dunk_low.jpg",
+      "image": "nike_dunk_low.jpg",
       "description": "Культовые кроссовки для скейтбординга",
       "sizes": ["39", "40", "41", "42", "43", "44"]
     },
@@ -326,7 +326,7 @@
       "rating": 4.3,
       "isNew": false,
       "discount": 0,
-      "image": "../images/adidas_zx_2k_boost.jpg",
+      "image": "adidas_zx_2k_boost.jpg",
       "description": "Технологичные кроссовки с амортизацией Boost",
       "sizes": ["40", "41", "42", "43", "44", "45"]
     },
@@ -341,7 +341,7 @@
       "rating": 4.0,
       "isNew": true,
       "discount": 0,
-      "image": "../images/puma_cali_dream.jpg",
+      "image": "puma_cali_dream.jpg",
       "description": "Женские кроссовки в калифорнийском стиле",
       "sizes": ["36", "37", "38", "39", "40"]
     },
@@ -356,7 +356,7 @@
       "rating": 4.5,
       "isNew": false,
       "discount": 0,
-      "image": "../images/new_balance_327.png",
+      "image": "new_balance_327.png",
       "description": "Ретро-кроссовки с современным дизайном",
       "sizes": ["39", "40", "41", "42", "43", "44"]
     },
@@ -371,7 +371,7 @@
       "rating": 4.7,
       "isNew": true,
       "discount": 0,
-      "image": "../images/nike_mercurial_vapor_14.jpg",
+      "image": "nike_mercurial_vapor_14.jpg",
       "description": "Футбольные бутсы для скорости и маневренности",
       "sizes": ["40", "41", "42", "43", "44"]
     },
@@ -386,7 +386,7 @@
       "rating": 4.4,
       "isNew": false,
       "discount": 20,
-      "image": "../images/adidas_dame_8.jpg",
+      "image": "adidas_dame_8.jpg",
       "description": "Баскетбольные кроссовки Дэмиана Лилларда",
       "sizes": ["42", "43", "44", "45", "46"]
     },
@@ -401,7 +401,7 @@
       "rating": 4.6,
       "isNew": false,
       "discount": 0,
-      "image": "../images/asics_gel_quantum_360.jpg",
+      "image": "asics_gel_quantum_360.jpg",
       "description": "Беговые кроссовки с круговой системой амортизации",
       "sizes": ["40", "41", "42", "43", "44", "45"]
     },
@@ -416,7 +416,7 @@
       "rating": 4.3,
       "isNew": false,
       "discount": 25,
-      "image": "../images/under_armour_hovr_phantom_2.webp",
+      "image": "under_armour_hovr_phantom_2.webp",
       "description": "Беговые кроссовки с технологией HOVR",
       "sizes": ["41", "42", "43", "44", "45"]
     },
@@ -431,7 +431,7 @@
       "rating": 4.2,
       "isNew": true,
       "discount": 0,
-      "image": "../images/reebok_zig_kinetica_ii.jpg",
+      "image": "reebok_zig_kinetica_ii.jpg",
       "description": "Кроссовки для высокоинтенсивных тренировок",
       "sizes": ["40", "41", "42", "43", "44", "45"]
     },
@@ -446,7 +446,7 @@
       "rating": 4.5,
       "isNew": true,
       "discount": 0,
-      "image": "../images/nike_react_infinity_3.jpg",
+      "image": "nike_react_infinity_3.jpg",
       "description": "Беговые кроссовки для предотвращения травм",
       "sizes": ["40", "41", "42", "43", "44", "45"]
     }

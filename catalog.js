@@ -1,7 +1,7 @@
 class CatalogService {
     static async getProducts() {
         try {
-            const response = await fetch('../json/products.json');
+            const response = await fetch('products.json');
             if (response.ok) {
                 const data = await response.json();
                 localStorage.setItem('products', JSON.stringify(data.products));
@@ -229,7 +229,7 @@ async function addToCartAsync(productId) {
 async function getProductById(productId) {
         try {
             // Загружаем товары из JSON файла
-            const response = await fetch('../json/products.json');
+            const response = await fetch('products.json');
             if (response.ok) {
                 const data = await response.json();
                 return data.products.find(p => p.id === productId);

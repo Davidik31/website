@@ -34,7 +34,7 @@ class ProductDetail {
         try {
             // Пробуем разные пути
             const possiblePaths = [
-                '../json/products.json'
+                'products.json'
             ];
 
             for (const path of possiblePaths) {
