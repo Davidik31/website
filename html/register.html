@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация</title>
+    <link rel="stylesheet" href="../css/stylereg.css">
+    <script src = "../js/script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+     <header>
+        <nav>
+            <div class="nav-container">
+                <div class="logo">
+                    <img src="../images/logo.jpg" alt="Логотип SportStyle">
+                </div>
+                
+                <!-- Бургер-меню кнопка -->
+                <button class="burger-menu" id="burgerMenu" aria-label="Открыть меню">
+                    <span class="burger-line"></span>
+                    <span class="burger-line"></span>
+                    <span class="burger-line"></span>
+                </button>
+                
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="zevs1.html" class="nav-link active">Главная</a></li>
+                    <li><a href="catalog.html" class="nav-link">Каталог</a></li>
+                    <li><a href="delivery.html" class="nav-link">Доставка</a></li>
+                    <li><a href="returns.html" class="nav-link">Возврат</a></li>
+                    <li><a href="profile.html" class="nav-link">Личный кабинет</a></li>
+                    <li><a href="about.html" class="nav-link">О нас</a></li>
+                    <li><a href="faq.html" class="nav-link">FAQ</a></li>
+                    <li><a href="cart.html" class="nav-link cart-link">Корзина <i class="fas fa-shopping-cart"></i></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="auth-container">
+        <h2>Регистрация</h2>
+        <form id="registerForm">
+            <input type="text" id="fullName" placeholder="ФИО" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="password" id="password" placeholder="Пароль" required>
+            <input type="tel" id="phone" placeholder="Телефон">
+            <button type="submit">Зарегистрироваться</button>
+        </form>
+        <p>Уже есть аккаунт? <a href="login.html">Войти</a></p>
+    </div>
+    <script src="../js/storage.js"></script>
+    <script src="../js/auth.js"></script>
+</body>
+</html>

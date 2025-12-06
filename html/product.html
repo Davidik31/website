@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Карточка товара - SportStyle</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src = "../js/script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-container">
+                <div class="logo">
+                    <img src="../images/logo.jpg" alt="Логотип SportStyle">
+                </div>
+                
+                <!-- Бургер-меню кнопка -->
+                <button class="burger-menu" id="burgerMenu" aria-label="Открыть меню">
+                    <span class="burger-line"></span>
+                    <span class="burger-line"></span>
+                    <span class="burger-line"></span>
+                </button>
+                
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="zevs1.html" class="nav-link">Главная</a></li>
+                    <li><a href="catalog.html" class="nav-link">Каталог</a></li>
+                    <li><a href="delivery.html" class="nav-link">Доставка</a></li>
+                    <li><a href="returns.html" class="nav-link">Возврат</a></li>
+                    <li><a href="profile.html" class="nav-link">Личный кабинет</a></li>
+                    <li><a href="about.html" class="nav-link">О нас</a></li>
+                    <li><a href="faq.html" class="nav-link">FAQ</a></li>
+                    <li><a href="cart.html" class="nav-link cart-link">Корзина <i class="fas fa-shopping-cart"></i></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="breadcrumbs">
+            <a href="zevs1.html">Главная/</a> 
+            <a href="catalog.html">Каталог/</a>  
+            <span id="product-category">/</span> 
+            <span id="product-name-breadcrumb"></span>
+        </div>
+
+        <div id="product-detail" class="product-detail">
+            <!-- Карточка товара будет загружена через JavaScript -->
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>SportStyle</h3>
+                    <p>Ваш надежный партнер в мире спортивной обуви</p>
+                    <div class="social-links">
+                        <a href="#">VK</a>
+                        <a href="#">Telegram</a>
+                        <a href="#">Instagram</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Магазин</h4>
+                    <ul>
+                        <li><a href="catalog.html">Каталог</a></li>
+                        <li><a href="about.html">О нас</a></li>
+                        <li><a href="delivery.html">Доставка и оплата</a></li>
+                        <li><a href="returns.html">Возврат и обмен</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Помощь</h4>
+                    <ul>
+                        <li><a href="contact.html">Контакты</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="size-guide.html">Таблица размеров</a></li>
+                        <li><a href="warranty.html">Гарантия</a></li>
+                    </ul>
+                    </div>
+                <div class="footer-section">
+                    <h4>Контакты</h4>
+                    <div class="contact-info">
+                        <p>📞 8-800-555-35-35</p>
+                        <p>✉️ info@Sportstyle.ru</p>
+                        <p>🕒 Круглосуточно, без выходных</p>
+                        <p>📍 Москва, Спортивный проезд, 15</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 SportStyle. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/cart-service.js"></script>
+    <script src="../js/product.js"></script>
+</body>
+</html>

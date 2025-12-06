@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Частые вопросы - SportStyle</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src = "../js/script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-container">
+                <div class="logo">
+                    <img src="../images/logo.jpg" alt="Логотип SportStyle">
+                </div>
+                
+                <!-- Бургер-меню кнопка -->
+                <button class="burger-menu" id="burgerMenu" aria-label="Открыть меню">
+                    <span class="burger-line"></span>
+                    <span class="burger-line"></span>
+                    <span class="burger-line"></span>
+                </button>
+                
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="zevs1.html" class="nav-link">Главная</a></li>
+                    <li><a href="catalog.html" class="nav-link">Каталог</a></li>
+                    <li><a href="delivery.html" class="nav-link">Доставка</a></li>
+                    <li><a href="returns.html" class="nav-link">Возврат</a></li>
+                    <li><a href="profile.html" class="nav-link">Личный кабинет</a></li>
+                    <li><a href="about.html" class="nav-link">О нас</a></li>
+                    <li><a href="faq.html" class="nav-link active">FAQ</a></li>
+                    <li><a href="cart.html" class="nav-link cart-link">Корзина <i class="fas fa-shopping-cart"></i></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="faq-page">
+        <h1>Частые вопросы</h1>
+
+        <div class="search-box">
+            <input type="text" id="faq-search" placeholder="Поиск по вопросам...">
+        </div>
+
+        <div class="faq-categories">
+            <button class="faq-category-btn active" data-category="all">Все вопросы</button>
+            <button class="faq-category-btn" data-category="delivery">Доставка</button>
+            <button class="faq-category-btn" data-category="payment">Оплата</button>
+            <button class="faq-category-btn" data-category="returns">Возврат</button>
+            <button class="faq-category-btn" data-category="sizing">Размеры</button>
+            <button class="faq-category-btn" data-category="products">Товары</button>
+        </div>
+
+        <section class="faq-section">
+            <h2>🚚 Доставка</h2>
+            <div class="faq-item" data-category="delivery">
+                <div class="faq-question">Сколько стоит доставка?</div>
+                <div class="faq-answer">
+                    <p>Доставка бесплатна при заказе от 3 000 ₽. При меньшей сумме заказа стоимость доставки составляет 300 ₽. Экспресс-доставка (в течение 24 часов) - 500 ₽.</p>
+                </div>
+            </div>
+            <div class="faq-item" data-category="delivery">
+                <div class="faq-question">Как долго ждать доставку?</div>
+                <div class="faq-answer">
+                    <p>В Москве и области: 1-2 рабочих дня. По России: 2-5 рабочих дней. Сроки могут меняться в зависимости от удаленности региона и выбранного способа доставки.</p>
+                </div>
+            </div>
+            <div class="faq-item" data-category="delivery">
+                <div class="faq-question">Можно ли изменить адрес доставки?</div>
+                <div class="faq-answer">
+                    <p>Да, вы можете изменить адрес доставки до момента отправки заказа. Для этого свяжитесь с нашим менеджером по телефону 8-800-555-35-35.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq-section">
+            <h2>💳 Оплата</h2>
+            <div class="faq-item" data-category="payment">
+                <div class="faq-question">Какие способы оплаты вы принимаете?</div>
+                <div class="faq-answer">
+                    <p>Мы принимаем: наличные при получении, банковские карты (Visa, Mastercard, МИР), электронные кошельки (ЮMoney, QIWI), а также предоставляем рассрочку на 6 месяцев.</p>
+                </div>
+            </div>
+            <div class="faq-item" data-category="payment">
+                <div class="faq-question">Безопасно ли оплачивать картой на сайте?</div>
+                <div class="faq-answer">
+                    <p>Да, все платежи защищены SSL-шифрованием. Мы не храним данные вашей карты - обработкой платежей занимается надежный платежный шлюз.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq-section">
+            <h2>🔄 Возврат и обмен</h2>
+            <div class="faq-item" data-category="returns">
+                <div class="faq-question">Как вернуть товар?</div>
+                <div class="faq-answer">
+                    <p>Вы можете вернуть товар в течение 30 дней с момента покупки. Для этого свяжитесь с нами, подготовьте товар с сохраненным товарным видом и заполните заявление на возврат.</p>
+                </div>
+            </div>
+            <div class="faq-item" data-category="returns">
+                <div class="faq-question">Что делать, если не подошел размер?</div>
+                <div class="faq-answer">
+                    <p>Вы можете обменять товар на другой размер в течение 30 дней. Свяжитесь с нами, и мы организуем бесплатную замену.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq-section">
+            <h2>📏 Размеры</h2>
+            <div class="faq-item" data-category="sizing">
+                <div class="faq-question">Как определить правильный размер?</div>
+                <div class="faq-answer">
+                    <p>Используйте нашу таблицу размеров на странице товара. Если сомневаетесь, позвоните нам - наши консультанты помогут подобрать идеальный размер.</p>
+                </div>
+            </div>
+            <div class="faq-item" data-category="sizing">
+                <div class="faq-question">Размеры соответствуют стандартным?</div>
+                <div class="faq-answer">
+                    <p>Да, все размеры соответствуют российским и международным стандартам. Однако рекомендуем ознакомиться с таблицей размеров каждого бренда, так как可能存在 небольшие отличия.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq-section">
+            <h2>👟 Товары</h2>
+            <div class="faq-item" data-category="products">
+                <div class="faq-question">Все товары оригинальные?</div>
+                <div class="faq-answer">
+                    <p>Да, мы работаем только с официальными поставщиками и гарантируем 100% оригинальность всей продукции.</p>
+                </div>
+            </div>
+            <div class="faq-item" data-category="products">
+                <div class="faq-question">Есть ли гарантия на товары?</div>
+                <div class="faq-answer">
+                    <p>Да, на все товары предоставляется официальная гарантия производителя от 6 месяцев до 2 лет в зависимости от бренда.</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="contact-promo">
+            <h2>Не нашли ответ на свой вопрос?</h2>
+            <p>Наша служба поддержки всегда готова помочь вам!</p>
+            <p>📞 8-800-555-35-35 (бесплатно)</p>
+            <p>✉️ support@sportstyle.ru</p>
+            <p>🕒 Круглосуточно, без выходных</p>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>SportStyle</h3>
+                    <p>Ваш надежный партнер в мире спортивной обуви</p>
+                    <div class="social-links">
+                        <a href="#">VK</a>
+                        <a href="#">Telegram</a>
+                        <a href="#">Instagram</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Магазин</h4>
+                    <ul>
+                        <li><a href="catalog.html">Каталог</a></li>
+                        <li><a href="about.html">О нас</a></li>
+                        <li><a href="delivery.html">Доставка и оплата</a></li>
+                        <li><a href="returns.html">Возврат и обмен</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Помощь</h4>
+                    <ul>
+                        <li><a href="contact.html">Контакты</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="size-guide.html">Таблица размеров</a></li>
+                        <li><a href="warranty.html">Гарантия</a></li>
+                    </ul>
+                    </div>
+                <div class="footer-section">
+                    <h4>Контакты</h4>
+                    <div class="contact-info">
+                        <p>📞 8-800-555-35-35</p>
+                        <p>✉️ info@Sportstyle.ru</p>
+                        <p>🕒 Круглосуточно, без выходных</p>
+                        <p>📍 Москва, Спортивный проезд, 15</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 SportStyle. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/faq.js"></script>
+</body>
+</html>

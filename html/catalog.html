@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог товаров</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src = "../js/script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-container">
+                <div class="logo">
+                    <img src="../images/logo.jpg" alt="Логотип SportStyle">
+                </div>
+                
+                <!-- Бургер-меню кнопка -->
+                <button class="burger-menu" id="burgerMenu" aria-label="Открыть меню">
+                    <span class="burger-line"></span>
+                    <span class="burger-line"></span>
+                    <span class="burger-line"></span>
+                </button>
+                
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="zevs1.html" class="nav-link">Главная</a></li>
+                    <li><a href="catalog.html" class="nav-link active">Каталог</a></li>
+                    <li><a href="delivery.html" class="nav-link">Доставка</a></li>
+                    <li><a href="returns.html" class="nav-link">Возврат</a></li>
+                    <li><a href="profile.html" class="nav-link">Личный кабинет</a></li>
+                    <li><a href="about.html" class="nav-link">О нас</a></li>
+                    <li><a href="faq.html" class="nav-link">FAQ</a></li>
+                    <li><a href="cart.html" class="nav-link cart-link">Корзина <i class="fas fa-shopping-cart"></i></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+        
+        <div id="search-results" class="search-results"></div>
+    <main>
+        <h2>Каталог товаров</h2>
+        <div class="filters">
+            <div class="filter-group">
+                <input type="text" id="search" placeholder="Поиск по названию, бренду..." class="search-input">
+            </div>
+            
+            <div class="filter-group">
+                <select id="category">
+                    <option value="">Все категории</option>
+                    <option value="running">Беговые</option>
+                    <option value="basketball">Баскетбольные</option>
+                    <option value="football">Футбольные</option>
+                    <option value="training">Для тренировок</option>
+                    <option value="lifestyle">Повседневные</option>
+                    <option value="hiking">Трекинговые</option>
+                    <option value="tennis">Теннисные</option>
+                </select>
+            </div>
+            
+            <div class="filter-group">
+                <select id="brand">
+                    <option value="">Все бренды</option>
+                    <option value="Nike">Nike</option>
+                    <option value="Adidas">Adidas</option>
+                    <option value="Puma">Puma</option>
+                    <option value="New Balance">New Balance</option>
+                    <option value="Asics">Asics</option>
+                    <option value="Reebok">Reebok</option>
+                    <option value="Under Armour">Under Armour</option>
+                    <option value="Salomon">Salomon</option>
+                    <option value="Mizuno">Mizuno</option>
+                </select>
+            </div>
+
+            <div class="filter-group">
+                <select id="price">
+                    <option value="">Любая цена</option>
+                    <option value="0-5000">До 5 000 ₽</option>
+                    <option value="5000-10000">5 000 - 10 000 ₽</option>
+                    <option value="10000-15000">10 000 - 15 000 ₽</option>
+                    <option value="15000-20000">15 000 - 20 000 ₽</option>
+                    <option value="20000+">От 20 000 ₽</option>
+                </select>
+            </div>
+            
+            <div class="filter-group">
+                <select id="gender">
+                    <option value="">Любой пол</option>
+                    <option value="male">Мужские</option>
+                    <option value="female">Женские</option>
+                    <option value="unisex">Унисекс</option>
+                </select>
+            </div>
+            
+            <button id="reset-filters" class="reset-btn">Сбросить фильтры</button>
+        </div>
+        
+        <div class="sorting">
+            <label for="sort">Сортировка:</label>
+            <select id="sort">
+                <option value="default">По умолчанию</option>
+                <option value="price-asc">Цена по возрастанию</option>
+                <option value="price-desc">Цена по убыванию</option>
+                <option value="name-asc">По названию (А-Я)</option>
+                <option value="name-desc">По названию (Я-А)</option>
+                <option value="brand-asc">По бренду (А-Я)</option>
+            </select>
+        </div>
+        
+        <div id="catalog" class="catalog-container">
+            <!-- Товары будут загружены через JavaScript -->
+        </div>
+        <button class="cart-btn" onclick="goToCart()">
+                <span class="cart-icon">🛒</span>
+                <span class="cart-text">Корзина</span>
+                <span id="cart-count" class="cart-counter"></span>
+        </button>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>SportStyle</h3>
+                    <p>Ваш надежный партнер в мире спортивной обуви</p>
+                    <div class="social-links">
+                        <a href="#">VK</a>
+                        <a href="#">Telegram</a>
+                        <a href="#">Instagram</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Магазин</h4>
+                    <ul>
+                        <li><a href="catalog.html">Каталог</a></li>
+                        <li><a href="about.html">О нас</a></li>
+                        <li><a href="delivery.html">Доставка и оплата</a></li>
+                        <li><a href="returns.html">Возврат и обмен</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Помощь</h4>
+                    <ul>
+                        <li><a href="contact.html">Контакты</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="size-guide.html">Таблица размеров</a></li>
+                        <li><a href="warranty.html">Гарантия</a></li>
+                    </ul>
+                    </div>
+                <div class="footer-section">
+                    <h4>Контакты</h4>
+                    <div class="contact-info">
+                        <p>📞 8-800-555-35-35</p>
+                        <p>✉️ info@Sportstyle.ru</p>
+                        <p>🕒 Круглосуточно, без выходных</p>
+                        <p>📍 Москва, Спортивный проезд, 15</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 SportStyle. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="../js/catalog.js"></script>
+    <script src="../js/cart.js"></script>
+    <script src="../js/search.js"></script>
+</body>
+</html>

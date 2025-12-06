@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Личный кабинет</title>
+    <link rel="stylesheet" href="../css/stylereg.css">
+    <script src = "../js/script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-container">
+                <div class="logo">
+                    <img src="../images/logo.jpg" alt="Логотип SportStyle">
+                </div>
+                
+                <!-- Бургер-меню кнопка -->
+                <button class="burger-menu" id="burgerMenu" aria-label="Открыть меню">
+                    <span class="burger-line"></span>
+                    <span class="burger-line"></span>
+                    <span class="burger-line"></span>
+                </button>
+                
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="zevs1.html" class="nav-link">Главная</a></li>
+                    <li><a href="catalog.html" class="nav-link">Каталог</a></li>
+                    <li><a href="delivery.html" class="nav-link">Доставка</a></li>
+                    <li><a href="returns.html" class="nav-link">Возврат</a></li>
+                    <li><a href="profile.html" class="nav-link active">Личный кабинет</a></li>
+                    <li><a href="about.html" class="nav-link">О нас</a></li>
+                    <li><a href="faq.html" class="nav-link">FAQ</a></li>
+                    <li><a href="cart.html" class="nav-link cart-link">Корзина <i class="fas fa-shopping-cart"></i></a></li>
+                    <li><a href="#" id="logoutBtn">Выйти</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+    <div class="profile-container">
+        <h1>Личный кабинет</h1>
+        <div class="tabs">
+            <button class="tab-button-active" data-tab="profile">Профиль</button>
+            <button class="tab-button" data-tab="orders">Мои заказы</button>
+            <button class="tab-button" data-tab="addresses">Адреса</button>
+        </div>
+
+        <div id="profile" class="tab-content active">
+            <h3>Личные данные</h3>
+            <form id="profileForm">
+                <input type="text" id="profileName" placeholder="ФИО">
+                <input type="email" id="profileEmail" placeholder="Email">
+                <input type="tel" id="profilePhone" placeholder="Телефон">
+                <button type="submit">Сохранить изменения</button>
+            </form>
+        </div>
+
+        <div id="orders" class="tab-content">
+            <h3>История заказов</h3>
+            <div id="ordersList">
+                <!--Заказы будут добавляться через JS-->
+            </div>
+        </div>
+
+        <div id="addresses" class="tab-content">
+            <h3>Мои адреса</h3>
+            <form id="addressForm">
+                <input type="text" id="addressName" placeholder="Название (например: Дом)">
+                <textarea id="addressValue" placeholder="Полный адрес"></textarea>
+                <button type="submit">Добавить адрес</button>
+            </form>
+
+            <div id="addressesList">
+                <!--Сюда адреса будут добавляться через JS-->
+            </div>
+        </div>
+    </div>
+    
+    <script src="../js/storage.js"></script>
+    <script src="../js/profile.js"></script>
+</body>
+</html>
