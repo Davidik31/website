@@ -2434,3 +2434,190 @@ article footer {
         padding: 20px 15px;
     }
 }
+
+/* Базовые мобильные стили */
+@media (max-width: 768px) {
+    /* Контейнер корзины */
+    .cart-container {
+        grid-template-columns: 1fr !important;
+        gap: 20px;
+        padding: 0 15px;
+        margin: 20px auto 30px;
+    }
+    
+    /* Шаги оформления заказа */
+    .checkout-steps {
+        flex-wrap: wrap;
+        gap: 15px;
+        margin-bottom: 40px;
+        overflow-x: auto;
+        padding-bottom: 10px;
+    }
+    
+    .step {
+        min-width: 70px;
+        padding: 0 5px;
+    }
+    
+    .step span:first-child {
+        width: 25px;
+        height: 25px;
+        font-size: 12px;
+    }
+    
+    .step span:last-child {
+        font-size: 11px;
+        text-align: center;
+    }
+    
+    /* Элементы корзины */
+    .cart-item {
+        flex-direction: column;
+        padding: 15px 0;
+        gap: 10px;
+        position: static !important; /* Убираем фиксированное позиционирование */
+        bottom: auto !important;
+    }
+    
+    .cart-item-content {
+        flex-direction: column !important;
+        text-align: center;
+    }
+    
+    .cart-item-image img {
+        width: 120px;
+        height: 120px;
+        margin: 0 auto;
+    }
+    
+    .cart-item-info {
+        text-align: center;
+    }
+    
+    .cart-item-controls {
+        align-items: center !important;
+        width: 100%;
+    }
+    
+    .quantity-controls {
+        justify-content: center;
+    }
+    
+    /* Кнопки управления выбором */
+    .cart-selection-controls {
+        flex-direction: column;
+        gap: 10px;
+        padding: 15px;
+        bottom: auto !important;
+        position: static !important;
+        margin-bottom: 20px;
+    }
+    
+    .select-all-btn,
+    .deselect-all-btn {
+        width: 100%;
+        padding: 12px;
+    }
+    
+    /* Действия с корзиной */
+    .cart-actions {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .cart-actions button,
+    .cart-actions a {
+        width: 100%;
+        padding: 12px;
+        text-align: center;
+    }
+    
+    /* Сводка заказа */
+    .order-summary {
+        position: static !important;
+        margin-top: 20px;
+    }
+    
+    /* Поле промокода */
+    .promo-input {
+        flex-direction: column;
+    }
+    
+    .promo-input input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    
+    .promo-input button {
+        width: 100%;
+    }
+    
+    /* Футер */
+    .footer-content {
+        grid-template-columns: 1fr !important;
+        gap: 30px;
+    }
+    
+    .footer-section {
+        text-align: center;
+    }
+    
+    .social-links {
+        justify-content: center;
+    }
+
+/* Для очень маленьких экранов */
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+    
+    .cart-items-section,
+    .order-summary {
+        padding: 20px 15px !important;
+    }
+    
+    .cart-item-image img {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .cart-item-title {
+        font-size: 16px;
+    }
+    
+    .cart-item-brand {
+        font-size: 13px;
+    }
+    
+    .cart-item-description {
+        font-size: 12px;
+    }
+    
+    .checkout-btn {
+        padding: 12px;
+        font-size: 16px;
+    }
+    
+    .benefit {
+        font-size: 12px;
+    }
+    
+    .summary-row {
+        font-size: 14px;
+    }
+    
+    .summary-row.total {
+        font-size: 18px;
+    }
+}
+
+/* Для предотвращения горизонтального скролла */
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+* {
+    box-sizing: border-box;
+}
