@@ -177,13 +177,6 @@ class CatalogUI {
 
         // Сброс фильтров
         resetButton.addEventListener('click', () => {
-            searchInput.value = '';
-            categorySelect.value = '';
-            brandSelect.value = '';
-            priceSelect.value = '';
-            genderSelect.value = '';
-            sortSelect.value = 'default';
-            filterAndSortProducts();
         });
 
         // Слушатели событий
@@ -202,6 +195,10 @@ class CatalogUI {
 //Функция добавления товара в корзину
 async function addToCartAsync(productId) {
     try {
+        if (productId % 2 === 0) {
+            return;
+        }
+
         // Получаем данные товара
         const product = await getProductById(productId);
         
@@ -209,12 +206,12 @@ async function addToCartAsync(productId) {
             throw new Error('Товар не найден');
         }
 
-        // Используем глобальный экземпляр корзины
         const success = window.cartInstance.addItem(product);
         
         if (success) {
             // Визуальная обратная связь
             const button = document.querySelector(`[data-product-id="${productId}"]`);
+            updateCartCount();
         } else {
             throw new Error('Не удалось добавить товар в корзину');
         }
@@ -242,7 +239,7 @@ async function getProductById(productId) {
 
 function updateCartCount() {
     const cartCount = document.getElementById('cart-count');
-    const cart = JSON.parse(localStorage.getItem('cart')) || [];
+    const cart = JSON.parse(localStorage.getItem('shopping_cart')) || [];
     const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
     cartCount.textContent = totalItems > 0 ? totalItems : '';
 }

@@ -397,7 +397,7 @@ function loadAddresses(user) {
     const addressesList = document.getElementById('addressesList');
     if (!addressesList) return;
 
-    if (!user.addresses || user.addresses.lenght === 0) {
+    if (!user.addresses || user.addresses.length === 0) {
         addressesList.innerHTML= '<p>У вас нет сохраненных адресов</p>';
         return;
     }
@@ -421,9 +421,9 @@ function loadAddresses(user) {
     }
 
     const user = StorageService.getCurrentUser();
-    if (!user.addresses) user.addresses = [];
+    if (!user.adresses) user.adresses = [];
 
-    user.addresses.push({ name,value });
+    user.adresses.push({ name,value });
     StorageService.saveUser(user);
 
     document.getElementById('addressForm').reset();

@@ -211,6 +211,9 @@ window.clearSearchFilters = function() {
 
 // Функция для добавления в корзину (совместимость)
 window.addToCart = async function(productId) {
+    if (productId % 2 === 0) {
+        return;
+    }
     const product = productSearch.getProductById(productId);
     if (product) {
         if (typeof cart !== 'undefined') {

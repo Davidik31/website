@@ -226,7 +226,7 @@ class Cart {
     // Применить скидку к сумме
     applyDiscount(subtotal) {
         const promoCode = this.getAppliedPromoCode();
-        if (promoCode === 'davidik') {
+        if (promoCode === 'Davidik') {
             return subtotal * 0.8; // 20% скидка
         }
         return subtotal;
@@ -235,7 +235,7 @@ class Cart {
     // Получить размер скидки
     getDiscountAmount(subtotal) {
         const promoCode = this.getAppliedPromoCode();
-        if (promoCode === 'davidik') {
+        if (promoCode === 'Davidik') {
             return subtotal * 0.2; // 20% скидка
         }
         return 0;
@@ -325,14 +325,14 @@ class Cart {
         }
 
         // Проверка промокода
-        if (promoCode === 'davidik') {
+        if (promoCode === 'Davidik') {
             const subtotal = this.getSelectedTotalPrice();
             const discountAmount = subtotal * 0.2; // 20% скидка
             
             this.saveAppliedPromoCode(promoCode);
             this.saveAppliedDiscount(discountAmount); // Сохраняем сумму скидки
 
-            this.showNotification('Промокод "davidik" применен! Скидка 20% активирована.');
+            this.showNotification('Промокод применен! Скидка 20% активирована.');
             this.updateSelectedSummary();
             
             // Очищаем поле ввода
@@ -368,7 +368,9 @@ class Cart {
         }
 
         // Создаем уникальный идентификатор с учетом размера
-        const uniqueId = selectedSize ? `${product.id}-${selectedSize}` : product.id.toString();
+        const uniqueId = selectedSize != null && selectedSize !== ''
+            ? `${product.id}-${selectedSize}`
+            : product.id.toString();
         
         const cart = this.getCart();
         const existingItem = cart.find(item => item.uniqueId === uniqueId);
@@ -386,7 +388,7 @@ class Cart {
                 image: product.image,
                 description: product.description,
                 sizes: product.sizes,
-                size: selectedSize, // сохраняем выбранный размер
+                size: selectedSize, // сохраняем выбранный размер как есть
                 quantity: 1
             });
             console.log('Добавили новый товар с размером:', selectedSize);
@@ -741,8 +743,6 @@ function injectCartStyles() {
                 gap: 15px;
                 padding: 20px 0;
                 border-bottom: 1px solid #eee;
-                position: relative;
-                bottom: 120px;
                 transition: background-color 0.2s;
             }
             
@@ -869,8 +869,6 @@ function injectCartStyles() {
                 padding: 15px;
                 background: #f8f9fa;
                 border-radius: 8px;
-                position: relative;
-                bottom: 110px;
             }
             
             .select-all-btn, .deselect-all-btn {
@@ -921,7 +919,6 @@ function injectCartStyles() {
                 border-radius: 10px;
                 padding: 30px;
                 box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-                bottom: 500px;
             }
             
             .cart-items-section h2 {

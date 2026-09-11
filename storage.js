@@ -46,7 +46,7 @@ class StorageService {
         if (!user) return;
 
         if (!user.orders) user.orders = [];
-        user.orders.puch({
+        user.orders.push({
             id: Date.now(),
             date: new Date().toLocaleDateString(),
             ...order

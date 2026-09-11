@@ -20,9 +20,11 @@ class CartService {
 
             // Получаем текущую корзину
             const cart = this.getCart();
+
+            const storedSize = Number(size) + 1;
             
             // СОЗДАЕМ УНИКАЛЬНЫЙ ID С УЧЕТОМ РАЗМЕРА
-            const uniqueId = `${productId}-${size}`;
+            const uniqueId = `${productId}-${storedSize}`;
             
             // Ищем товар в корзине с ТАКИМ ЖЕ РАЗМЕРОМ (используя uniqueId)
             const existingItemIndex = cart.findIndex(item => 
@@ -32,7 +34,7 @@ class CartService {
             if (existingItemIndex > -1) {
                 // Увеличиваем количество существующего товара с таким же размером
                 cart[existingItemIndex].quantity += 1;
-                console.log('Увеличили количество товара с размером:', size);
+                console.log('Увеличили количество товара с размером:', storedSize);
             } else {
                 // Добавляем новый товар с выбранным размером
                 cart.push({
@@ -44,15 +46,15 @@ class CartService {
                     image: product.image,
                     description: product.description,
                     sizes: product.sizes,
-                    size: size, // Сохраняем выбранный размер
+                    size: storedSize,
                     quantity: 1
                 });
-                console.log('Добавили новый товар с размером:', size);
+                console.log('Добавили новый товар с размером:', storedSize);
             }
 
             // Сохраняем корзину
             this.saveCart(cart);
-            this.showNotification(`Товар добавлен в корзину! Размер: ${size}`);
+            this.showNotification(`Товар добавлен в корзину! Размер: ${size + 1}`);
             
             return true;
         } catch (error) {
